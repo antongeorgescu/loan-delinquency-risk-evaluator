@@ -1,0 +1,144 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_payers", "1000",
+                "--start_date", "2020-01-01",
+                "--end_date", "2023-12-31",
+                "--db_path", "student_loan_data.db",
+                "--export_csv",
+                "--algorithm", "svm"
+            ]
+        },
+        {
+            "name": "Generate Data: Default (1000 payers)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_data_generation.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_payers", "1000",
+                "--start_date", "2020-01-01",
+                "--end_date", "2023-12-31",
+                "--db_path", "student_loan_data.db",
+                "--export_csv"
+            ]
+        },
+        {
+            "name": "Generate Data: Small Test (100 payers)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_data_generation.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_payers", "100",
+                "--start_date", "2020-01-01",
+                "--end_date", "2023-12-31",
+                "--db_path", "test_student_loan_data.db",
+                "--export_csv"
+            ]
+        },
+        {
+            "name": "Generate Data: Large Dataset (5000 payers)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_data_generation.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_payers", "5000",
+                "--start_date", "2018-01-01",
+                "--end_date", "2024-12-31",
+                "--db_path", "large_student_loan_data.db"
+            ]
+        },
+        {
+            "name": "Generate Data: Custom Date Range",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_data_generation.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_payers", "1000",
+                "--start_date", "2022-01-01",
+                "--end_date", "2024-06-30",
+                "--db_path", "custom_student_loan_data.db",
+                "--export_csv"
+            ]
+        },
+        {
+            "name": "Run Delinquency Analysis",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_delinquency_analysis.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--algorithm", "kmeans", // Options: percentile (Bottom 60%=Low, Next 30%=Medium, Top 10%=High), threshold (Fixed probability thresholds: <0.3=Low, 0.3-0.6=Medium, >0.6=High), kmeans (K-means clustering of probabilities into 3 risk groups), svm (Support Vector Machine classifier trained on probability-based risk labels), knn (K-Nearest Neighbors classifier with optimal k and distance weighting)
+                "--db_path", "student_loan_data.db",
+            ]
+        },
+        {
+            "name": "Generate Campaign Files",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_campaign_files.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--db_path", "student_loan_data.db"
+            ]
+        },
+        {
+            "name": "Run EDA Analysis: Default",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_eda_analysis.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--db_path", "student_loan_data.db",
+                "--output_dir", "eda_outputs",
+                "--n_clusters", "3"
+            ]
+        },
+        {
+            "name": "Run EDA Analysis: Advanced (5 clusters, 15 components)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_eda_analysis.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--db_path", "student_loan_data.db",
+                "--output_dir", "eda_advanced_outputs",
+                "--n_clusters", "5",
+                "--n_components", "15"
+            ]
+        },
+        {
+            "name": "Run EDA Analysis: Quick Test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_eda_analysis.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--db_path", "test_student_loan_data.db",
+                "--output_dir", "eda_test_outputs",
+                "--n_clusters", "2",
+                "--n_components", "10"
+            ]
+        }
+    ]
+}

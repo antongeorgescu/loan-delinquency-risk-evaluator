@@ -1,0 +1,39 @@
+program_id,program_name,program_type,field_of_study,program_difficulty,duration_years,typical_tuition_cad,employment_rate_percent,avg_starting_salary_cad,accreditation_body,institution_type,university_name,requires_licensing,job_market_outlook
+1,Business Administration,Bachelor's,Business,1,4,34899.24,92.0,55431.73,Canadian Council of Professional Engineers,College,Northern College,False,Challenging
+2,Marketing,Bachelor's,Business,1,4,34489.11,87.4,46832.13,Canadian Medical Association,University,University of British Columbia (UBC),False,Fair
+3,Human Resources,Bachelor's,Business,1,4,28870.43,83.2,53772.73,Canadian Nursing Association,University,University of Toronto,False,Excellent
+4,Communications,Bachelor's,Liberal Arts,1,4,29210.01,73.4,41289.74,Canadian Medical Association,College,Central College,False,Challenging
+5,General Studies,Bachelor's,Liberal Arts,1,4,22997.85,70.5,39203.28,Canadian Council on Learning,College,Southern College,False,Fair
+6,Early Childhood Education,Bachelor's,Education,1,4,24850.2,81.3,44874.26,Canadian Association of University Teachers,College,Southern College,False,Good
+7,Hospitality Management,Bachelor's,Business,1,4,26577.31,79.8,44271.67,Canadian Medical Association,University,University of Alberta,False,Challenging
+8,Sports Management,Bachelor's,Business,1,4,32668.77,75.1,40921.55,Canadian Council on Learning,University,University of Alberta,False,Good
+9,Computer Science,Bachelor's,Technology,2,4,46097.07,92.4,75745.07,Canadian Medical Association,College,Central College,False,Good
+10,Nursing,Bachelor's,Healthcare,2,4,39369.5,91.4,65344.65,Professional Engineers Ontario,University,University of Toronto,True,Good
+11,Accounting,Bachelor's,Business,2,4,37141.18,85.5,59755.67,Canadian Medical Association,College,Eastern College,False,Good
+12,Psychology,Bachelor's,Social Sciences,2,4,32889.35,74.4,46770.9,Canadian Association of University Teachers,College,Western College,False,Fair
+13,Information Technology,Bachelor's,Technology,2,4,44959.25,89.9,64152.79,Canadian Medical Association,College,Northern College,False,Excellent
+14,Criminal Justice,Bachelor's,Social Sciences,2,4,28152.5,82.3,47045.83,Association of Universities and Colleges of Canada,College,Southern College,False,Challenging
+15,Social Work,Bachelor's,Social Sciences,2,4,31446.82,79.0,47732.76,Canadian Nursing Association,University,McGill University,False,Excellent
+16,Elementary Education,Bachelor's,Education,2,4,26166.95,84.7,50680.35,Association of Universities and Colleges of Canada,College,Southern College,False,Good
+17,Biomedical Engineering,Bachelor's,Engineering,3,4,55258.69,82.7,73394.29,Professional Engineers Ontario,University,University of British Columbia (UBC),True,Excellent
+18,Aerospace Engineering,Bachelor's,Engineering,3,4,48943.09,81.9,70768.75,Canadian Association of University Teachers,College,Southern College,True,Fair
+19,Chemical Engineering,Bachelor's,Engineering,3,4,54950.01,87.3,72048.73,Canadian Medical Association,University,University of Toronto,True,Fair
+20,Electrical Engineering,Bachelor's,Engineering,3,4,44120.85,87.4,74143.36,Canadian Nursing Association,University,University of British Columbia (UBC),True,Excellent
+21,Mechanical Engineering,Bachelor's,Engineering,3,4,46191.11,83.7,70691.06,Canadian Council on Learning,University,University of Toronto,True,Good
+22,Physics,Bachelor's,Science,3,4,45785.47,74.3,54079.2,Canadian Council on Learning,University,McGill University,False,Excellent
+23,Mathematics,Bachelor's,Science,3,4,41327.64,72.7,58245.09,Professional Engineers Ontario,College,Central College,False,Fair
+24,Chemistry,Bachelor's,Science,3,4,44900.39,72.7,56719.5,Canadian Council on Learning,University,McGill University,False,Good
+25,Architecture,Bachelor's,Design,3,5,49613.41,71.7,64782.99,Professional Engineers Ontario,University,University of British Columbia (UBC),False,Challenging
+26,Pre-Medicine,Bachelor's,Science,3,4,53825.08,63.6,43075.67,Canadian Council of Professional Engineers,College,Metropolitan College,False,Fair
+27,Master of Business Administration,Master's,Business,2,2,71293.12,96.4,99001.69,Canadian Association of University Teachers,University,University of Alberta,False,Challenging
+28,Master of Science in Engineering,Master's,Engineering,3,2,59887.88,90.1,87204.11,Canadian Medical Association,Professional School,Metropolitan Professional School,True,Challenging
+29,Master of Education,Master's,Education,2,2,32651.26,84.6,62644.36,Association of Universities and Colleges of Canada,Professional School,Northern Professional School,False,Good
+30,Master of Social Work,Master's,Social Sciences,2,2,40012.65,88.5,55755.5,Canadian Association of University Teachers,University,University of Alberta,False,Good
+31,Juris Doctor (Law),Professional,Law,3,3,79695.14,80.0,77440.79,Canadian Association of University Teachers,Professional School,Southern Professional School,True,Challenging
+32,Doctor of Medicine,Professional,Medicine,3,4,88363.19,99.3,119669.22,Canadian Medical Association,University,McGill University,True,Challenging
+33,Doctor of Pharmacy,Professional,Healthcare,3,4,69565.71,90.8,98782.9,Canadian Association of University Teachers,Professional School,Metropolitan Professional School,True,Challenging
+34,Automotive Technology,Certificate,Technical,1,2,16445.96,88.1,44737.92,Canadian Medical Association,Community College,Central Community College,False,Good
+35,HVAC Technology,Certificate,Technical,1,2,16928.8,86.2,50054.73,Association of Universities and Colleges of Canada,Community College,Western Community College,False,Fair
+36,Network Administration,Certificate,Technology,2,2,24193.38,78.7,51905.42,Law Society of Ontario,Technical School,Western Technical School,False,Good
+37,Dental Hygiene,Associate,Healthcare,2,2,37927.68,94.7,63020.87,Association of Universities and Colleges of Canada,Community College,Central Community College,True,Challenging
+38,Medical Assistant,Certificate,Healthcare,1,1,14548.32,89.7,39790.45,Canadian Council on Learning,Technical School,Metropolitan Technical School,True,Excellent
