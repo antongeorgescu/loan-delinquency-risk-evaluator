@@ -84,7 +84,7 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": [
-                "--algorithm", "kmeans", // Options: percentile (Bottom 60%=Low, Next 30%=Medium, Top 10%=High), threshold (Fixed probability thresholds: <0.3=Low, 0.3-0.6=Medium, >0.6=High), kmeans (K-means clustering of probabilities into 3 risk groups), svm (Support Vector Machine classifier trained on probability-based risk labels), knn (K-Nearest Neighbors classifier with optimal k and distance weighting)
+                "--algorithm", "random_forest", // Options: percentile, threshold, kmeans, random_forest, gradient_boosting, logistic_regression, neural_network, svm, knn
                 "--db_path", "student_loan_data.db",
             ]
         },

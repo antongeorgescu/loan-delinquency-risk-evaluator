@@ -27,22 +27,26 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Risk Scoring Algorithms:
-  percentile  - Bottom 60% = Low(0), Next 30% = Medium(1), Top 10% = High(2)
-  threshold   - Fixed probability thresholds: <0.3=Low, 0.3-0.6=Medium, >0.6=High
-  kmeans      - K-means clustering of probabilities into 3 risk groups
-  svm         - Support Vector Machine classifier trained on probability-based risk labels
-  knn         - K-Nearest Neighbors classifier with optimal k and distance weighting
+  percentile        - Bottom 60% = Low(0), Next 30% = Medium(1), Top 10% = High(2)
+  threshold         - Fixed probability thresholds: <0.3=Low, 0.3-0.6=Medium, >0.6=High
+  kmeans            - K-means clustering of probabilities into 3 risk groups
+  random_forest     - Use Random Forest model directly for risk classification
+  gradient_boosting - Use Gradient Boosting model directly for risk classification
+  logistic_regression - Use Logistic Regression model directly for risk classification
+  neural_network    - Use Neural Network (MLP) classifier for risk classification
+  svm               - Support Vector Machine classifier trained on probability-based risk labels
+  knn               - K-Nearest Neighbors classifier with optimal k and distance weighting
 
 Examples:
   python run_delinquency_analysis.py
-  python run_delinquency_analysis.py --algorithm svm
-  python run_delinquency_analysis.py --algorithm knn --db_path my_database.db
+  python run_delinquency_analysis.py --algorithm random_forest
+  python run_delinquency_analysis.py --algorithm gradient_boosting --db_path my_database.db
         """
     )
     
     parser.add_argument(
         "--algorithm",
-        choices=['percentile', 'threshold', 'kmeans', 'svm', 'knn'],
+        choices=['percentile', 'threshold', 'kmeans', 'random_forest', 'gradient_boosting', 'logistic_regression', 'neural_network', 'svm', 'knn'],
         default='percentile',
         help="Risk scoring algorithm to use (default: percentile)"
     )
